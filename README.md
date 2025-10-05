@@ -35,9 +35,9 @@ La CLI expone `http://localhost:8888`. Los botones llaman a `/.netlify/functions
 
 ## API de la función
 
-- `GET /.netlify/functions/note` → devuelve `{ content, updatedAt }` o 404 si no hay dato.
-- `POST /.netlify/functions/note` con `{ "content": "texto" }` → guarda el texto.
-- `DELETE /.netlify/functions/note` → borra el dato.
+- `GET /.netlify/functions/note` → devuelve `{ content }` o 404 si no hay dato.
+- `POST /.netlify/functions/note` con `{ "content": "texto" }` → guarda el texto y devuelve el mismo payload.
+- `DELETE /.netlify/functions/note` → borra el dato (204).
 
 Todos los endpoints responden JSON y aceptan CORS abierto para simplificar la demo.
 

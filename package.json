@@ -1,0 +1,13 @@
+{
+  "name": "prueba-basica-con-blob",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Demo mínima que guarda, recupera y elimina una nota usando Netlify Blobs.",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@netlify/blobs": "^5.0.0"
+  }
+}
